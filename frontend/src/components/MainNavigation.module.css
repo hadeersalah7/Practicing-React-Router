@@ -16,7 +16,13 @@
   color: var(--color-primary-400);
 }
 
-.list a:hover,
+.list a:hover .list a.active {
+  color: var(--color-primary-400);
+}
+
 .list a.active {
-  color: var(--color-primary-800);
+  background-color: var(--color-primary-900);
+  box-shadow: 2px 2px 2px #c5b698;
+  padding: 4px;
+  border-radius: 3px;
 }
