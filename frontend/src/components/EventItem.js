@@ -1,10 +1,14 @@
+import { useEffect } from 'react';
 import classes from './EventItem.module.css';
 
-function EventItem({ event }) {
+function EventItem({ events }) {
   function startDeleteHandler() {
     // ...
   }
-
+  useEffect(() => {
+    console.log("allEvents---", events)
+  }, [])
+  const event = events.event
   return (
     <article className={classes.event}>
       <img src={event.image} alt={event.title} />
