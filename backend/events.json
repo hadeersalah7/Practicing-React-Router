@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"dfdsfsd","image":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d96bb958-4e6c-4ce0-9447-fbe226fbbecf/dfp35sf-1bec9b86-164d-4e67-8636-07d2dde9dece.png/v1/fill/w_622,h_350,q_70,strp/girl_badass_assassin_animated_wallpaper_by_favorisxp_dfp35sf-350t.jpg","date":"2024-07-23","description":"sdfsdfdsf","id":"45715252-d7b4-460f-aaea-ceff6a4a3356"},{"title":"vfgdfgfd","image":"https://www.deviantart.com/favorisxp/art/Mustang-Shatokan-Car-live-wallpaper-for-PC-916920764","date":"2024-07-09","description":"this is a new test","id":"fb289c9d-7efc-487b-bdcd-65d393bc9406"},{"title":"new test ","image":"https://www.deviantart.com/crazyjackaljones/art/Cyberpunk-2077-Night-City-Day-762575039","date":"2024-07-09","description":"this is a new test","id":"2b74de6d-6ee8-4351-8039-c96eaabe0182"},{"title":"this is a new event","image":"https://www.deviantart.com/crazyjackaljones/art/Cyberpunk-2077-Night-City-Day-762575039","date":"2024-07-09","description":"cyberPunk image","id":"27977563-1e6a-4e78-8e7b-a11d9a5993ee"},{"title":"this is a test","image":"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/d96bb958-4e6c-4ce0-9447-fbe226fbbecf/deme581-b92fe69c-3bf2-48db-920b-4fe4107ca62e.jpg/v1/fill/w_622,h_350,q_70,strp/neon_rider_x_steelseries_live_wallpaper_by_favorisxp_deme581-350t.jpg","date":"2024-08-01","description":"testing","id":"e180c2f7-1bbe-4588-8daf-3401cee8eaee"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
