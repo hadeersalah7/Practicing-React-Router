@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import { json, useLoaderData} from "react-router-dom";
+import { json, useLoaderData, useRouteLoaderData} from "react-router-dom";
 import EventItem from "../components/EventItem.js"
 export default function EventsDetails() {
-  const eventLoader = useLoaderData()
+  const eventLoader = useRouteLoaderData("eventId")
 
   useEffect(() => {
     console.log("eventsLoader---", eventLoader.events)

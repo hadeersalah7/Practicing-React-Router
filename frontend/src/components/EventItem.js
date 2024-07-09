@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import classes from './EventItem.module.css';
+import { Link } from 'react-router-dom';
 
 function EventItem({ events }) {
   function startDeleteHandler() {
@@ -16,7 +17,7 @@ function EventItem({ events }) {
       <time>{event.date}</time>
       <p>{event.description}</p>
       <menu className={classes.actions}>
-        <a href="edit">Edit</a>
+        <Link to="edit">Edit</Link>
         <button onClick={startDeleteHandler}>Delete</button>
       </menu>
     </article>
