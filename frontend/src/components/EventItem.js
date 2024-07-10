@@ -1,10 +1,16 @@
 import { useEffect } from 'react';
 import classes from './EventItem.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useSubmit } from 'react-router-dom';
 
 function EventItem({ events }) {
+  const submit = useSubmit()
   function startDeleteHandler() {
     // ...
+    const proceed = window.confirm("Are you sure? O.o")
+    
+    if (proceed) {
+      submit(null, {method: "delete"})
+    }
   }
   useEffect(() => {
     console.log("allEvents---", events)
@@ -25,3 +31,4 @@ function EventItem({ events }) {
 }
 
 export default EventItem;
+
