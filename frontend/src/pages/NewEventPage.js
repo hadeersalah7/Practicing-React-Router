@@ -25,6 +25,11 @@ export async function action({ params, request }) {
     },
     body: JSON.stringify(eventData)
   })
+console.log({response})
+  if (response.status === 422) {
+    
+  return response.json()
+}
 
   if (!response.ok) {
     throw json({ message: "Couldn't Load Action" }, { status: 500 })
