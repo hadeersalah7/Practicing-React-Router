@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import classes from './EventItem.module.css';
 import { Link, useSubmit } from 'react-router-dom';
 
@@ -12,9 +11,6 @@ function EventItem({ events }) {
       submit(null, {method: "delete"})
     }
   }
-  useEffect(() => {
-    console.log("allEvents---", events)
-  }, [])
   const event = events.event
   return (
     <article className={classes.event}>

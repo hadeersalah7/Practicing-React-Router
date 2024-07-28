@@ -1,6 +1,7 @@
 .form {
     max-width: 40rem;
     margin: 2rem auto;
+    
 }
 
 .form label,
@@ -8,12 +9,18 @@
 .form textarea {
     display: block;
     width: 100%;
+    
 }
 
 .form input,
 .form textarea {
     font: inherit;
     padding: 0.25rem;
+    border: 2px solid #fff;
+        color: #fff;
+        background-color: var(--color-gray-600);
+        border-radius: 5px;
+        outline: none;
 }
 
 .actions {

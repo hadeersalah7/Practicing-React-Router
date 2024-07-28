@@ -27,6 +27,17 @@ function MainNavigation() {
               Events Page
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/auth"
+              className={({ isActive }) =>
+                isActive ? classes.active : undefined
+              }
+            >
+              Authentication
+            </NavLink>
+          </li>
         </ul>
       </nav>
     </header>
