@@ -1,7 +1,11 @@
 import React from 'react'
+import PageContent from './PageContent'
 
 export default function HomePage() {
   return (
-    <div>HomePage</div>
+    <PageContent title="Welcome!">
+      <p>Browse all our amazing events!</p>
+    </PageContent>
+
   )
 }
