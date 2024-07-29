@@ -29,10 +29,14 @@ export async function action({ request }) {
         body: JSON.stringify(authData),
     });
 
+    const res = await response.json();
     if (response.status === 422 || response.status === 401) {
-        const errorData = await response.json();
-        return json(errorData, { status: response.status });
+        
+        return json(res, { status: response.status });
     }
+
+    const token = res.token
+    localStorage.setItem("token", token)
 
     if (!response.ok) {
         throw json({ message: "Couldn't authenticate user." }, { status: 500 });

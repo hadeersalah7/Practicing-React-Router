@@ -19,11 +19,9 @@ function ErrorPage() {
     return (
         // <h1 style={{textAlign: 'center', color: "red", paddingTop: "10px"}}>An Error Occured, Please Try Again Later! O.o</h1>
         <>
-            <MainNavigation>
                 <PageContent title={title}>
                     <p>{message}</p>
                 </PageContent>
-            </MainNavigation>
         </>
 
 
