@@ -9,12 +9,15 @@ import EventsRoot from "./components/EventsRoot";
 import { loader as eventsLoader } from "./pages/EventsPage";
 import ErrorPage from "./pages/ErrorPage";
 import AuthenticationPage, { action as authAction } from "./pages/AuthenticationPage";
-import {action as logoutAction} from "./pages/Logout"
+import { action as logoutAction } from "./pages/Logout"
+import { tokenAction } from "./util/auth";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
     errorElement: <ErrorPage />,
+    loader: tokenAction,
+    id: "root",
     children: [
       { index: true, element: <HomePage /> },
       { path: "auth", element: <AuthenticationPage />, action: authAction },
