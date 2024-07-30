@@ -10,7 +10,7 @@ import { loader as eventsLoader } from "./pages/EventsPage";
 import ErrorPage from "./pages/ErrorPage";
 import AuthenticationPage, { action as authAction } from "./pages/AuthenticationPage";
 import { action as logoutAction } from "./pages/Logout"
-import { tokenAction } from "./util/auth";
+import { checkAuthLoader, tokenAction } from "./util/auth";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -34,10 +34,10 @@ const router = createBrowserRouter([
             id: "eventId",
             loader: EventsDetailsLoader, children: [
               { index: true, element: <EventsDetails />, action: deleteAction },
-              { path: "edit", element: <EditEventPage /> }
+              { path: "edit", element: <EditEventPage />, loader: checkAuthLoader }
               ]
             },
-          { path: "new", element: <NewEventPage />, action: EventFormAction },
+          { path: "new", element: <NewEventPage />, action: EventFormAction, loader: checkAuthLoader },
           
         ],
       },
